@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: Microsoft YaHei UI;
+}
+
+.allpage {
+	height: 100%;
+	weight: 100%;
+}
+
+input {
+	line-height: normal;
+	-webkit-appearance: textfield;
+	background-color: white;
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	padding: 1px;
+	border-width: 2px;
+	border-style: inset;
+	border-color: initial;
+	border-image: initial;
+}
+
+input[type="text"], input[type="password"] {
+	outline: 0;
+	border-radius: 5px;
+	color: white;
+	border: 1px solid #808080;
+	transition: 300ms;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+input, button {
+	text-rendering: auto;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	margin: 0em;
+	font: 400 13.3333px Arial;
+}
+
+input[type=button] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+.allpage {
+	position: relative;
+	background-size: 100% 100%; background-attachment : fixed;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+.main-window {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -190px;
+	margin-top: -280px;
+	box-sizing: border-box;
+	width: 380px;
+	padding: 30px 30px 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+	border: 1px solid #808080;
+}
+
+.form-title {
+	margin-bottom: 40px;
+}
+
+.form-title>span {
+	font-size: 30px;
+	color: #5E6BA2;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.form-item {
+	margin-bottom: 30px;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e3e3e3;
+	box-sizing: border-box;
+}
+
+.form-txt {
+	display: inline-block;
+	width: 80px;
+	color: #F5F5F5; font-size : 16px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.form-input {
+	border: 0;
+	outline: 0;
+	font-size: 14px;
+	color: #595961;
+	width: 155px;
+}
+
+.form-btn {
+	margin-top: 40px;
+}
+
+.login-button {
+	display: block;
+	width: 320px;
+	height: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #F5F5F5;
+	background: #5E6BA2;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 0;
+	outline: 0;
+}
+.login-button:hover{background:#6abaee;color:#fff;border-color:#6abaee}
+input[type=submit] {
+	cursor: pointer;
+}
+
+/*单选radio美化样式代码参考
+————————————————
+版权声明：本文为CSDN博主「人间草木96」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_43258252/article/details/90750496
+*/
+input[type='radio'] {
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+	margin-left: -20px;
+}
+
+label {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: 8px; border-radius : 50%;
+	border: 1px solid #999;
+	border-radius: 50%;
+}
+
+/*设置选中的input的样式*/
+/* + 是兄弟选择器,获取选中后的label元素*/
+input:checked+label {
+	background-color: #3c86f1;
+	border: 1px solid #3c86f1;
+}
+
+input:checked+label::after {
+	position: absolute;
+	content: '';
+	width: 5px;
+	height: 10px;
+	top: 3px;
+	left: 6px;
+	border: 2px solid #fff;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg);
+}
+
+.continue {
+	color: #fff;
+	background-color: #5E6BA2;
+	width: 120px;
+	margin: 10px 20px;
+	line-height: 40px;
+	height: 40px;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 0;
+	outline: 0;
+	text-align: center;
+}
+
+.back {
+	color: #5E6BA2;
+	background-color: #fff;
+	border: 1px solid #3a9bd9;
+	width: 120px;
+	margin: 10px 20px;
+	line-height: 40px;
+	height: 40px;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 0;
+	outline: 0;
+	text-align: center;
+}
+.button:hover {opacity: 0.9;}
+.back:hover{background:#edf8ff;color:#3a9bd9 !important}
+.continue:hover{background:#6abaee;color:#fff;border-color:#6abaee}
+
+.userMenu{
+	width:14%;
+	height:100%;
+	background-color:#3a9bd9;
+}
+.form-group{
+		text-align:center;
+		width: 300px;
+		margin : 10px 0px 15px 0px;
+	}
+.sexmodel {
+	height: 75px;
+	width: 54px;
+	margin: 0px 0px 0px 30px;
+}
+
+.selectmodel {
+	border: 2px solid #8D9CAC;
+	border-radius:10px;
+}
